@@ -1,0 +1,13 @@
+/* Home Hero Section*/
+.hero_section {
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 110px;
+    padding-bottom: 20px;
+  }
+
+  .button{
+    background-color: #FF4E4E;
+    border-radius: none;
+  }
