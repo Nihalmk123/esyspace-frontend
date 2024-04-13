@@ -45,6 +45,14 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link
+                  className="nav-link text-dark font-weight-bold"
+                  to="/Dashboard"
+                >
+                  Dashboard
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
                   className="nav-link"
                   style={{ backgroundColor: "#FF4E4E", color: "#FFF", padding: "8px 15px", borderRadius: "5px", marginRight: "10px" }}
                   to="/Signup"

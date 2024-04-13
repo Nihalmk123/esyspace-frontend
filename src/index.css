@@ -4,3 +4,36 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  .sidebar .nav{
+    padding: 0px !important;
+    }
+    .sidebar ul li:hover{
+    background-color: #FF4E4E;
+    border-radius: 5px;
+    }
+    .button{
+      background-color: #FF4E4E;
+      font-weight: 500;
+      padding: 5px 65px;
+      border-radius: 5px;
+      border: none;
+      margin: 15px;
+    }
+    
+    /* .sidebar {
+      width: 200px; 
+      transition: all 0.3s ease;
+    }
+    
+    .sidebar.open {
+      width: 100%; 
+    } */
+    
+    /* Add media query for mobile view */
+    /* @media screen and (max-width: 768px) {
+      .sidebar {
+        width: 0;
+        }
+    } */
+    

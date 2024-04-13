@@ -7,6 +7,7 @@ import Signup from "./pages/Registration/Signup";
 import Signin from "./pages/Registration/Signin";
 import HelpCenter from "./pages/HelpCenter/HelpCenter";
 import Price from "./Price/Price";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Features" element={<Feature />} />
         <Route path="/HelpCenter" element={<HelpCenter />} />
         <Route path="/Pricing" element={<Price />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
   );
