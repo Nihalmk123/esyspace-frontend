@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark shadow-sm" style={{ backgroundColor: "#F5F7F8" }}>
+      <nav
+        className="navbar navbar-expand-lg navbar-dark shadow-sm"
+        style={{ backgroundColor: "#F5F7F8" }}
+      >
         <div className="container">
           <Link className="navbar-brand fs-2 text-dark" to="/">
             Esyspace
@@ -23,7 +26,10 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto align-items-center">
               <li className="nav-item">
-                <Link className="nav-link text-dark font-weight-bold" to="/Features">
+                <Link
+                  className="nav-link text-dark font-weight-bold"
+                  to="/Features"
+                >
                   Features
                 </Link>
               </li>
@@ -46,7 +52,7 @@ const Header = () => {
               <li className="nav-item">
                 <Link
                   className="nav-link text-dark font-weight-bold"
-                  to="/Dashboard"
+                  to="/Dashboard1"
                 >
                   Dashboard
                 </Link>
@@ -54,7 +60,13 @@ const Header = () => {
               <li className="nav-item">
                 <Link
                   className="nav-link"
-                  style={{ backgroundColor: "#FF4E4E", color: "#FFF", padding: "8px 15px", borderRadius: "5px", marginRight: "10px" }}
+                  style={{
+                    backgroundColor: "#FF4E4E",
+                    color: "#FFF",
+                    padding: "8px 15px",
+                    borderRadius: "5px",
+                    marginRight: "10px",
+                  }}
                   to="/Signup"
                 >
                   Sign Up
@@ -63,7 +75,12 @@ const Header = () => {
               <li className="nav-item">
                 <Link
                   className="nav-link"
-                  style={{ backgroundColor: "#FF4E4E", color: "#FFF", padding: "8px 15px", borderRadius: "5px" }}
+                  style={{
+                    backgroundColor: "#FF4E4E",
+                    color: "#FFF",
+                    padding: "8px 15px",
+                    borderRadius: "5px",
+                  }}
                   to="/Signin"
                 >
                   Sign In
