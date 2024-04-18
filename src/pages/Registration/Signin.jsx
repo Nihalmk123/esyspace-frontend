@@ -15,58 +15,69 @@ import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
-    <div className="background_color p-3">
-      <MDBContainer className="my-5">
-        <MDBCard style={{borderRadius:"12px"}}>
-          <MDBRow className="g-0 d-flex align-items-center">
-            <MDBCol md="6">
-              <MDBCardImage
-                src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg"
-                alt="phone"
-                className="rounded-t-5 rounded-tr-lg-0"
-                fluid
-                style={{borderRadius:"12px"}}
-              />
-            </MDBCol>
-
-            <MDBCol md="5">
-            <h1 className='text-center mb-3 text_font'>Signin</h1>
-              <MDBCardBody className="mt-3">
-                <MDBInput
-                  wrapperClass="mb-4"
-                  label="Email"
-                  id="form2"
-                  type="email"
-                />
-                <MDBInput
-                  wrapperClass="mb-4"
-                  label="Password"
-                  id="form2"
-                  type="password"
-                />
-
-                <div className="d-flex justify-content-between mx-4 mb-4">
-                  <MDBCheckbox
-                    name="flexCheck"
-                    value=""
-                    id="flexCheckDefault"
-                    label="Remember me"
-                  />
-                  <a href="!#">Forgot password?</a>
+    <>
+      <div className="container">
+        {/* Outer Row */}
+        <div className="row justify-content-center">
+          <div className="col-xl-10 col-lg-12 col-md-9">
+            <div className="card o-hidden border-0 shadow-lg my-5">
+              <div className="card-body p-0">
+                {/* Nested Row within Card Body */}
+                <div className="row">
+                  <div className="col-lg-6 d-none d-lg-block bg-warning" />
+                  {/* bg-login-image */}
+                  <div className="col-lg-6">
+                  
+                    <div className="p-5">
+                      <div className="text-center">
+                        <h1 className="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                      </div>
+                      <form className="user">
+                        <div className="form-group">
+                          <input type="email" className="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." />
+                        </div>
+                        <div className="form-group">
+                          <input type="password" className="form-control form-control-user" id="exampleInputPassword" placeholder="Password" />
+                        </div>
+                        <div className="form-group">
+                          <div className="custom-control custom-checkbox small">
+                            <input type="checkbox" className="custom-control-input" id="customCheck" />
+                            <label className="custom-control-label" htmlFor="customCheck">Remember
+                              Me</label>
+                          </div>
+                        </div>
+                        <a href="index.html" className="btn btn-primary btn-user btn-block">
+                          Login
+                        </a>
+                        <hr />
+                        <a href="index.html" className="btn btn-google btn-user btn-block">
+                          <i className="fab fa-google fa-fw" /> Login with Google
+                        </a>
+                        <a href="index.html" className="btn btn-facebook btn-user btn-block">
+                          <i className="fab fa-facebook-f fa-fw" /> Login with Facebook
+                        </a>
+                      </form>
+                      <hr />
+                      <div className="text-center">
+                        <a className="small" href="forgot-password.html">Forgot Password?</a>
+                      </div>
+                      <div className="text-center">
+                        <a className="small" href="register.html">Create an Account!</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <MDBBtn className="mb-4 w-100 reg_buttons">Sign in</MDBBtn>
-                <p className="text-center">
-                  Already have an Account
-                  <Link className="mx-2 " to="/signup">
-                    Sign up
-                  </Link>
-                </p>
-              </MDBCardBody>
-            </MDBCol>
-          </MDBRow>
-        </MDBCard>
-      </MDBContainer>
-    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </>
+
+
+
   );
 };
 
